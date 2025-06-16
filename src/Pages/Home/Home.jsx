@@ -34,7 +34,7 @@ function Home() {
         <div className="desc">
           <h1>We are changing the way people shop</h1>
           <p>
-            is a user-friendly e-commerce platform designed to make online
+            Who is a user-friendly e-commerce platform designed to make online
             shopping simple and convenient
           </p>
           <button onClick={handleOurProductsButton}>OUR PRODUCTS</button>
