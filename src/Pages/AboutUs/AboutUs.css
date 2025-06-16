@@ -1,0 +1,18 @@
+.about {
+  margin: 0 15em;
+  padding: 2em 10em;
+  text-align: center;
+}
+
+.about span {
+  color: rgb(2, 109, 231);
+}
+
+.about h1 {
+  margin: 1em 0;
+}
+.about p {
+  line-height: 150%;
+  text-align: left;
+  font-size: medium;
+}

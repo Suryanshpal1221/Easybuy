@@ -1,0 +1,83 @@
+.card {
+  height: 350px;
+  width: 300px;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 24px;
+  background-color: white;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px;
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.image {
+  height: 200px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image img {
+  transform: scale(1.05);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-height: 100px; /* Ensures enough space for all details */
+}
+
+.card h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  word-wrap: break-word; /* Ensure long text wraps properly */
+  flex-grow: 1; /* Allow the title to grow */
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff6f61;
+  margin-top: auto; /* Pushes price and rating to the bottom */
+}
+
+.rating {
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  margin-top: 8px;
+}
+
+.card:hover .price {
+  color: #ff3e30;
+}
+
+.card:hover .rating {
+  color: #555;
+}

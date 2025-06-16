@@ -1,0 +1,23 @@
+header {
+  background: hsl(217 92% 10% / 1);
+  display: flex;
+  justify-content: end;
+  color: white;
+  font-weight: lighter;
+  padding: 0 10rem;
+}
+
+header div {
+  margin: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+    padding: 0;
+  }
+  header div {
+    margin: 0.3rem 1rem;
+  }
+}

@@ -1,0 +1,86 @@
+.navbar {
+  background-color: hsl(235, 100%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  padding: 0.6em 10em;
+}
+.sidelist {
+  display: none;
+  height: 3em;
+  width: 3em;
+}
+
+.logo {
+  font-size: x-large;
+  padding: 6px 8px;
+  border-radius: 10px;
+  background-color: rgb(5, 122, 255);
+  border: 2px solid rgb(5, 122, 255);
+  color: hsl(235, 100%, 98%);
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.pages ul {
+  list-style: none;
+  display: flex;
+}
+
+.pages ul li {
+  padding: 0.6em 0.7em;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.TnC {
+  margin-right: 0.5em;
+  width: 6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TnC button {
+  height: 3em;
+  width: 3em;
+}
+
+.cartIcon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1240px) {
+  .navbar {
+    padding: 0;
+    padding: 0 1em;
+  }
+  .sidelist {
+    display: inline-block;
+  }
+  .nav {
+    display: none;
+  }
+  .pages {
+    display: none;
+  }
+}
+
+.active {
+  background-color: hsl(217 92% 10% / 1);
+  color: hsl(235, 100%, 98%);
+  border-radius: 8px;
+  color: hsl(235, 100%, 98%);
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
+
+a:not(.active):hover {
+  border-radius: 8px;
+  background: hsl(233, 11%, 85%);
+  text-decoration: none;
+}

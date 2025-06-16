@@ -1,0 +1,134 @@
+/* Section Layout */
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 5em 10em;
+  gap: 4em;
+}
+
+.section1 {
+  width: 46%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 0.8em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+.section2 {
+  width: 48%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Product Title */
+.section2 div:first-child {
+  font-size: 2.4em;
+  color: rgb(44, 44, 44);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+/* Product Category */
+.section2 div:nth-child(2) {
+  font-size: 1.2em;
+  color: rgb(130, 130, 130);
+  font-weight: 600;
+  margin: 0.8em 0;
+  text-transform: uppercase;
+}
+
+/* Product Price */
+.section2 div:nth-child(3) {
+  font-size: 2em;
+  color: rgb(84, 84, 84);
+  margin: 0.8em 0;
+  font-weight: bold;
+  color: hsl(247 47% 43%);
+}
+
+/* Product Description */
+.section2 .description {
+  font-size: 1.1em;
+  color: rgb(70, 70, 70);
+  line-height: 1.6em;
+  margin-bottom: 1.5em;
+}
+
+/* Add to Bag Button */
+.section2 button {
+  font-weight: 700;
+  height: 3.5em;
+  width: 12em;
+  background-color: hsl(247, 47%, 43%);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.section2 button:hover {
+  cursor: pointer;
+  background-color: hsl(247, 47%, 35%);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px;
+}
+
+/* Amount and Select Dropdown */
+.amount {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+select {
+  height: 3.5em;
+  width: 100%;
+  padding: 0px 12px;
+  border-radius: 8px;
+  margin: 1.5em 0;
+  font-weight: bold;
+  border: 2px solid hsl(247, 47%, 43%);
+  color: rgb(44, 44, 44);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  section {
+    flex-direction: column;
+    margin: 2em 1.5em;
+    gap: 2em;
+  }
+
+  .section1,
+  .section2 {
+    width: 100%;
+  }
+
+  section img {
+    max-height: 250px;
+  }
+
+  .section2 div:first-child {
+    font-size: 1.8em;
+  }
+
+  .section2 div:nth-child(3) {
+    font-size: 1.6em;
+  }
+}

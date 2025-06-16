@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 4px 8px;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.count {
+  padding: 0px 8px;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
